@@ -1,12 +1,11 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"]){
-    $_POST = ["nome"];
-    $_POST = ["email"];
-    $_POST = ["salario"];
-    $_POST = ["tipo"];
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $salario = $_POST["salario"];
+    $tipo = $_POST["tipo"];
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -33,5 +32,13 @@ if($_SERVER["REQUEST_METHOD"]){
     </form>
 
     <h2>Lista de Funcionários Cadastrados</h2>
+    <table>
+        <tr>
+            <th>Nome:<?= $nome?></th>
+            <th>Email: <?= $email?></th>
+            <th>Salário: <?= $salario?></th>
+            <th>Função: <?= $tipo?></th>
+        </tr>
+    </table>
 </body>
 </html>

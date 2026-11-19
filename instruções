@@ -16,13 +16,11 @@ REGRAS DA AVALIAÇÃO
 Organize o projeto em pastas separadas:
 - models/ — Classes e regras de negócio.
 - views/ — Páginas HTML e formulários.
-- controllers/ — Processamento das requisições.
-- config/ — Conexão com o banco de dados.
+- controllers/ — Processamento das requisições.       
+- config/ — Conexão com o banco de dados.            
 - index.php — Página inicial do sistema.
-Utilize require_once ou include_once para importar os arquivos necessários.
+Utilize require_once ou include_once para importar os arquivos necessários. 
 A organização deve permitir identificar claramente as responsabilidades de cada camada.
-
-
 2. PROGRAMAÇÃO ORIENTADA A OBJETOS
 Crie uma classe abstrata chamada Funcionario, contendo:
 Atributos:
