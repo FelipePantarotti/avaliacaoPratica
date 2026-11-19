@@ -21,6 +21,7 @@ Organize o projeto em pastas separadas:
 - index.php — Página inicial do sistema.
 Utilize require_once ou include_once para importar os arquivos necessários. 
 A organização deve permitir identificar claramente as responsabilidades de cada camada.
+
 2. PROGRAMAÇÃO ORIENTADA A OBJETOS
 Crie uma classe abstrata chamada Funcionario, contendo:
 Atributos:

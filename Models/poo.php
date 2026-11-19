@@ -1,15 +1,21 @@
 <?php
 
 abstract class Funcionario{
-    
-}
+    protected $nome;
+    protected $email;
+    protected $salario;
 
-abstract class FuncionarioComum extends Funcionario{
+    public function nome(){
+        $this->$nome;
+    }
 
-}
+    public function email(){
+        $this->$email;
+    }
 
-abstract class Gerente extends Funcionario{
-
+    public function salario(){
+        $this->salario;
+    }
 }
 
 ?>

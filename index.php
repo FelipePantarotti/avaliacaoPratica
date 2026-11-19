@@ -1,10 +1,14 @@
 <?php
-
+$mensagemErro = "Erro";
 if($_SERVER["REQUEST_METHOD"]){
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $salario = $_POST["salario"];
     $tipo = $_POST["tipo"];
+
+    if($nome == ""){
+        echo "$mensagemErro";
+    }
 }
 
 ?>
@@ -38,7 +42,9 @@ if($_SERVER["REQUEST_METHOD"]){
             <th>Email: <?= $email?></th>
             <th>Salário: <?= $salario?></th>
             <th>Função: <?= $tipo?></th>
+            <th>Bônus do salário: </th>
         </tr>
     </table>
+    <button type="submit">Exclusão</button>
 </body>
 </html>
